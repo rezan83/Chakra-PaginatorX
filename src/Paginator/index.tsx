@@ -47,4 +47,3 @@ const Paginator: FC<IPaginatorProps> = ({ pagesCount, selectedPage, setSelectedP
 };
 
 export default Paginator;
-export {usePagesState} from './usePagesState'
