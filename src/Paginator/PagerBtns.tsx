@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { Button } from '@chakra-ui/react';
-import { IPagerBtnsProps } from './types';
+import { IPagerBtnsProps } from './types/index.js';
 
 
 const PagerBtns: FC<IPagerBtnsProps> = ({
