@@ -7,7 +7,7 @@
 1. ### first import Paginator component and usePageState hook
 
 ```javascript
-import Paginator, { usePagesState } from 'chakra-paginatorx';
+import Paginator, { usePagesState } from 'paginatorx-chakra';
 ```
 
 2. ### Your data array using useEffect or custom hook or any other fetch library like react query, and it's type

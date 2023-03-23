@@ -1,10 +1,9 @@
 {
-  "name": "chakra-paginatorx",
+  "name": "paginatorx-chakra",
   "author": "Rezan Mohammad",
   "private": false,
-  "version": "1.2.2",
+  "version": "0.2.8-rc",
   "license": "MIT",
-  "type": "module",
   "main": "./dist/esm/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
