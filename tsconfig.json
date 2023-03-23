@@ -30,12 +30,14 @@
     "node_modules"
   ],
   "compilerOptions": {
-    "module": "esnext",
+    "target": "es6",
+    "module": "es6",
+    // "module": "esnext",
     "lib": ["dom", "esnext"],
     "importHelpers": true,
     "declaration": true,
-    "sourceMap": true,
-    "rootDir": "./src",
+    // "sourceMap": true,
+    // "rootDir": "./src",
     "outDir": "./dist/esm",
     "strict": true,
     "noImplicitReturns": true,

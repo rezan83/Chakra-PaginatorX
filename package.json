@@ -2,7 +2,7 @@
   "name": "chakra-paginatorx",
   "author": "Rezan Mohammad",
   "private": false,
-  "version": "1.1.6rc",
+  "version": "1.1.7rc",
   "license": "MIT",
   "type": "module",
   "main": "./dist/cjs/index.js",
@@ -22,7 +22,7 @@
     "dev": "vite",
     "build:vite": "tsc && vite build",
     "preview": "vite preview",
-    "build": "npm run build:esm && npm run build:cjs",
+    "build": "npm run build:esm && npm run build:cjs && cp package.json README.md ./dist",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs"
   },

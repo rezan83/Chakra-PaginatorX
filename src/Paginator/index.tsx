@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import { ArrowLeftIcon, ArrowRightIcon, ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 import { Button, SimpleGrid } from '@chakra-ui/react';
-import { IPaginatorProps } from './types/index.js';
-import PagerBtns from './PagerBtns.js';
+import { IPaginatorProps } from './types';
+import PagerBtns from './PagerBtns';
 
 
 
