@@ -6,7 +6,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gapon2401/my-react-typescript-package.git"
+    "url": "git+https://github.com/rezan83/Chakra-PaginatorX.git"
   },
   "scripts": {
     "dev": "vite",
