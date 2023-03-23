@@ -20,7 +20,7 @@ const yourData: TyourDataType[] = useYourUseFetch;
 3. ### feed usePageState hook with data arry and count of items per page
 
 ```javascript
-const { pagesCount, selectedPage, setSelectedPage, pagesArray } =
+const { pagesCount, selectedPage, setSelectedPage, pages } =
   usePagesState < TyourDataType > (yourData, countPerPage);
 ```
 
@@ -28,8 +28,8 @@ const { pagesCount, selectedPage, setSelectedPage, pagesArray } =
 
 ```javascript
 <div>
-  {!!pagesArray.length &&
-    pagesArray[selectedPage].map((item: TyourDataType) => {
+  {!!pages.length &&
+    pages[selectedPage].map((item: TyourDataType) => {
       return <Item key={item.id} item={item} />;
     })}
 </div>
@@ -39,7 +39,7 @@ const { pagesCount, selectedPage, setSelectedPage, pagesArray } =
 
 ```javascript
 {
-  pagesArray.length > 1 && (
+  pages.length > 1 && (
     <Paginator
       pagesCount={pagesCount}
       selectedPage={selectedPage}
