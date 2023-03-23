@@ -3,16 +3,28 @@
   "author": "Rezan Mohammad",
   "private": false,
   "version": "1.0.0",
+  "license": "MIT",
   "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rezan83/Chakra-PaginatorX.git"
-  },
+  },"keywords": [
+    "react",
+    "typescript",
+    "chakra-ui",
+    "pagination",
+    "paginatorx"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
+  "files": [
+    "dist",
+    "license",
+    "README.md"
+  ],
   "dependencies": {
     "@chakra-ui/icons": "^2.0.17",
     "@chakra-ui/react": "^2.5.2",
