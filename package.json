@@ -2,16 +2,17 @@
   "name": "chakra-paginatorx",
   "author": "Rezan Mohammad",
   "private": false,
-  "version": "1.2.0",
+  "version": "1.2.1",
   "license": "MIT",
   "type": "module",
-  "main": "./dist/cjs/index.js",
+  "main": "./dist/esm/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rezan83/Chakra-PaginatorX.git"
-  },"keywords": [
+  },
+  "keywords": [
     "react",
     "typescript",
     "chakra-ui",
@@ -22,9 +23,8 @@
     "dev": "vite",
     "build:vite": "tsc && vite build",
     "preview": "vite preview",
-    "build": "npm run build:esm && npm run build:cjs && cp package.json README.md ./dist",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs"
+    "build": "npm run build:esm && cp package.json README.md ./dist",
+    "build:esm": "tsc"
   },
   "files": [
     "dist",
