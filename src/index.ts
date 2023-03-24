@@ -1,4 +1,5 @@
 import Paginator from './Paginator';
 import { usePagesState } from './Paginator/usePagesState';
-export { usePagesState };
+const usePaginator = usePagesState;
+export { usePagesState, usePaginator };
 export default Paginator;

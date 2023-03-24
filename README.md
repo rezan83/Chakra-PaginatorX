@@ -1,30 +1,31 @@
 # PaginatorX
 
-## Pagination for Chakra-ui done easy
+## Pagination for Chakra-ui made easy
 
-### Depends on "@chakra-ui/icons" and "@chakra-ui/react"
-
-1. ### first import Paginator component and usePageState hook
+## [Demo](https://countries-proj.netlify.app/)
+### - Depends on "@chakra-ui/icons" and "@chakra-ui/react"
+### - How to use:
+1. ### first import Paginator component and usePaginator hook
 
 ```javascript
-import Paginator, { usePagesState } from 'paginatorx-chakra';
+import Paginator, { usePaginator } from 'paginatorx-chakra';
 ```
 
-2. ### Your data array using useEffect or custom hook or any other fetch library like react query, and it's type
+2. ### better to prepare your data array using useEffect or custom hook or any other effect fetch library like react query, and your data type in case you are using typescript
 
 ```javascript
 import { TyourDataType } from 'your types folder';
 const yourData: TyourDataType[] = useYourUseFetch;
 ```
 
-3. ### feed usePageState hook with data arry and count of items per page
+3. ### feed usePaginator hook with data arry and count of items per page, the generic might not be needed because usePaginator will infer it from your data type
 
 ```javascript
 const { pagesCount, selectedPage, setSelectedPage, pages } =
-  usePagesState < TyourDataType > (yourData, countPerPage);
+  usePaginator < TyourDataType > (yourData, countPerPage);
 ```
 
-4. ### consume the returned pages array with selected page
+4. ### consume the returned pages array (array of arrays, each one represent data in a page) with selectedPage as index
 
 ```javascript
 <div>
@@ -35,7 +36,7 @@ const { pagesCount, selectedPage, setSelectedPage, pages } =
 </div>
 ```
 
-5. ### Paginator needs pagesCount, selectedPage and setSelectedPage, all are returned from usePaginator
+5. ### Paginator component needs pagesCount, selectedPage and setSelectedPage, all are returned from usePaginator. Notice if you have your own logic to calculate these props then you don't need usePaginator
 
 ```javascript
 {
