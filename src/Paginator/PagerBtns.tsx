@@ -2,7 +2,6 @@ import React, { FC } from 'react';
 import { Button } from '@chakra-ui/react';
 import { IPagerBtnsProps } from './types';
 
-
 const PagerBtns: FC<IPagerBtnsProps> = ({
   pagesCount,
   selectedPage,
@@ -20,14 +19,15 @@ const PagerBtns: FC<IPagerBtnsProps> = ({
       ? 'none'
       : 'inline-block';
     thisPage === pagesCount - 1 &&
-      selectedPage < pagesCount - 2 &&
+      selectedPage < pagesCount - 3 &&
       pagerBtns.push(
-        <Button sx={pagerBtnsStyle} size={'sm'} variant={'link'} key={pagesCount + thisPage}>
+        <Button className="page-spacer" sx={pagerBtnsStyle} size={'sm'} variant={'link'} key={pagesCount + thisPage}>
           {'...'}
         </Button>
       );
     pagerBtns.push(
       <Button
+        className={`page-num ${selectedPage === thisPage ? 'page-active' : ''}`}
         sx={pagerBtnsStyle}
         display={isDisplay}
         size={'sm'}
@@ -39,9 +39,9 @@ const PagerBtns: FC<IPagerBtnsProps> = ({
       </Button>
     );
     thisPage === 0 &&
-      selectedPage > 1 &&
+      selectedPage > 2 &&
       pagerBtns.push(
-        <Button sx={pagerBtnsStyle} size={'sm'} variant={'link'} key={pagesCount + thisPage}>
+        <Button className="page-spacer" sx={pagerBtnsStyle} size={'sm'} variant={'link'} key={pagesCount + thisPage}>
           {'...'}
         </Button>
       );

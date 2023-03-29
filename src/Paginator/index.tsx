@@ -22,10 +22,10 @@ const Paginator: FC<IPaginatorProps> = ({ pagesCount, selectedPage, setSelectedP
   };
   return (
     <SimpleGrid columns={11} m="0 auto" w="fit-content">
-      <Button sx={pagerBtnsStyle} onClick={() => chooseSelectedPage(0)}>
+      <Button className="page-start" sx={pagerBtnsStyle} onClick={() => chooseSelectedPage(0)}>
         <ArrowLeftIcon />
       </Button>
-      <Button sx={pagerBtnsStyle} onClick={() => changeSelectedPage(-1)}>
+      <Button className="page-prev" sx={pagerBtnsStyle} onClick={() => changeSelectedPage(-1)}>
         <ChevronLeftIcon />
       </Button>
 
@@ -36,10 +36,10 @@ const Paginator: FC<IPaginatorProps> = ({ pagesCount, selectedPage, setSelectedP
         pagerBtnsStyle={pagerBtnsStyle}
       />
 
-      <Button sx={pagerBtnsStyle} onClick={() => changeSelectedPage(1)}>
+      <Button className="page-next" sx={pagerBtnsStyle} onClick={() => changeSelectedPage(1)}>
         <ChevronRightIcon />
       </Button>
-      <Button sx={pagerBtnsStyle} onClick={() => chooseSelectedPage(pagesCount - 1)}>
+      <Button className="page-last" sx={pagerBtnsStyle} onClick={() => chooseSelectedPage(pagesCount - 1)}>
         <ArrowRightIcon />
       </Button>
     </SimpleGrid>
