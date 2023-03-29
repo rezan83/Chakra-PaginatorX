@@ -1,8 +1,9 @@
 {
   "name": "paginatorx-chakra",
+  "description": "Pagination for Chakra-ui made easy",
   "author": "Rezan Mohammad",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "./dist/esm/index.js",
   "module": "./dist/esm/index.js",
@@ -16,7 +17,9 @@
     "typescript",
     "chakra-ui",
     "pagination",
-    "paginatorx"
+    "paginatorx",
+    "paginator",
+    "react pagination"
   ],
   "scripts": {
     "dev": "vite",
