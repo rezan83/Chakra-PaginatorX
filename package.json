@@ -3,7 +3,7 @@
   "description": "Pagination for Chakra-ui made easy",
   "author": "Rezan Mohammad",
   "private": false,
-  "version": "1.1.1",
+  "version": "1.2.1",
   "license": "MIT",
   "main": "./dist/esm/index.js",
   "module": "./dist/esm/index.js",

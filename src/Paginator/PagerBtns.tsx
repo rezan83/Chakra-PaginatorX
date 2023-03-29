@@ -19,7 +19,7 @@ const PagerBtns: FC<IPagerBtnsProps> = ({
       ? 'none'
       : 'inline-block';
     thisPage === pagesCount - 1 &&
-      selectedPage < pagesCount - 3 &&
+      selectedPage < pagesCount - 4 &&
       pagerBtns.push(
         <Button className="page-spacer" sx={pagerBtnsStyle} size={'sm'} variant={'link'} key={pagesCount + thisPage}>
           {'...'}
@@ -39,7 +39,7 @@ const PagerBtns: FC<IPagerBtnsProps> = ({
       </Button>
     );
     thisPage === 0 &&
-      selectedPage > 2 &&
+      selectedPage > 3 &&
       pagerBtns.push(
         <Button className="page-spacer" sx={pagerBtnsStyle} size={'sm'} variant={'link'} key={pagesCount + thisPage}>
           {'...'}
